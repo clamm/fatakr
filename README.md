@@ -149,11 +149,11 @@ This repo is an exemplary data repository (place where the posts are stored) for
 
 ## Test running the web server on a VM to host a GitHub data repo
 
+:hand: WORK IN PROGRESS - need to read about the webserver deployment
+
 1. Install knowledge_repo tooling on VM
 
-  ```
-  ... tbd
-  ```
+  See https://github.com/clamm/marry_vagrant_and_ansible to create a Vagrant VM with the knowledge repo tooling installed.
 
 2. Clone the data repo on the VM
 
