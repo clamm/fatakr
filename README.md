@@ -104,44 +104,44 @@ This repo is an exemplary data repository (place where the posts are stored) for
 
   ```
   cd ~/Development
-  git clone https://github.com/clamm/my_posts.git
+  git clone https://github.com/clamm/fatakr.git
   cd my_posts
   ```
 
 2. Initialise the knowledge_repo in this git repo:
 
   ```
-  knowledge_repo --repo ~/Development/my_posts init
+  knowledge_repo --repo ~/Development/fatakr init
   ```
 
 3. Put the markdown post into that data repo (in a separate project because of naming conflict)
 
   ```
-  knowledge_repo --repo ~/Development/my_posts add example_post.md -p project/markdown
+  knowledge_repo --repo ~/Development/fatakr add example_post.md -p project/markdown
   ```
 
 4. Preview the post
 
   ```
-  knowledge_repo --repo ~/Development/my_posts preview project/markdown
+  knowledge_repo --repo ~/Development/fatakr preview project/markdown
   ```
 
 5. Submit the post
 
   ```
-  knowledge_repo --repo ~/Development/my_posts submit project/markdown
+  knowledge_repo --repo ~/Development/fatakr submit project/markdown
   ```
 
-6. Open a PR on https://github.com/clamm/my_posts
+6. Open a PR on https://github.com/clamm/fatakr
 
 7. Review the PR
 
 8. Do changes
 
   ```
-  knowledge_repo --repo ~/Development/my_posts add example_post.md -p project/markdown --update
-  knowledge_repo --repo ~/Development/my_posts preview project/markdown
-  knowledge_repo --repo ~/Development/my_posts submit project/markdown
+  knowledge_repo --repo ~/Development/fatakr add example_post.md -p project/markdown --update
+  knowledge_repo --repo ~/Development/fatakr preview project/markdown
+  knowledge_repo --repo ~/Development/fatakr submit project/markdown
   ```
 
 7. Merge the PR
@@ -149,7 +149,7 @@ This repo is an exemplary data repository (place where the posts are stored) for
 
 ## Test running the web server on a VM to host a GitHub data repo
 
-:hand: WORK IN PROGRESS - need to read about the webserver deployment
+:hand: :construction: WORK IN PROGRESS - need to read about the webserver deployment
 
 1. Install knowledge_repo tooling on VM
 
@@ -159,14 +159,15 @@ This repo is an exemplary data repository (place where the posts are stored) for
 
   ```
   cd /tmp
-  git clone https://github.com/clamm/my_posts.git
+  git clone https://github.com/clamm/fatakr.git
   ```
 
 3. Start the web server and verify that posts are visible
 
   ```
-  knowledge_repo --repo "/tmp/my_k_repo" run server --port 4567
+  knowledge_repo --repo "/tmp/fatakr" run server --port 4567
   ```
 
 4. Checkout http://localhost:4567/feed
 
+:construction:
